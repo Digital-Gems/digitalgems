@@ -22,7 +22,7 @@ const ProblemSolution = () => {
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">
         The Problem We Solve
       </div>
-      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
+      <h2 className="font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
         Your team is buried in tasks<br className="hidden md:block" />that shouldn't need humans
       </h2>
 
@@ -53,7 +53,7 @@ const ProblemSolution = () => {
             border: "1px solid rgba(0,229,200,0.2)",
           }}
         >
-          <h3 className="font-head text-[1.1rem] md:text-[1.25rem] font-bold mb-4 tracking-[-0.02em] text-dg-white">
+          <h3 className="font-head text-[1.1rem] md:text-[1.25rem] font-bold mb-4 text-dg-white">
             AI agents that work<br />while your team sleeps
           </h3>
           <p className="text-dg-grey text-[0.88rem] md:text-[0.95rem] leading-[1.75] mb-6 md:mb-7">

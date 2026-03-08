@@ -26,7 +26,7 @@ const Testimonials = () => {
   return (
     <section ref={ref} className="bg-dg-bg2 px-5 md:px-10 lg:px-[60px] py-16 md:py-[100px]">
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">Client Results</div>
-      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
+      <h2 className="font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
         What our clients say
       </h2>
 
