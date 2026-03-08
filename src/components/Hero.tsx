@@ -1,12 +1,12 @@
 const ArrowIcon = () => (
-  <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
   </svg>
 );
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[100vh] flex items-center overflow-hidden px-5 md:px-10 lg:px-[60px] pt-[140px] md:pt-[180px] pb-20 md:pb-28">
+    <section className="relative min-h-[100vh] flex items-center overflow-hidden px-4 md:px-10 lg:px-[60px] pt-[110px] md:pt-[180px] pb-16 md:pb-28">
       {/* Grid background */}
       <div
         className="absolute inset-0"
@@ -33,7 +33,7 @@ const Hero = () => {
 
       <div className="relative z-[1] max-w-[780px]">
         <div
-          className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-[0.72rem] md:text-[0.78rem] font-semibold tracking-[0.06em] uppercase text-dg-teal mb-5 md:mb-7"
+          className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[0.62rem] md:text-[0.78rem] font-semibold tracking-[0.06em] uppercase text-dg-teal mb-4 md:mb-7"
           style={{
             background: "rgba(0,229,200,0.1)",
             border: "1px solid rgba(0,229,200,0.25)",
@@ -48,9 +48,9 @@ const Hero = () => {
         </div>
 
         <h1
-          className="font-syne font-head font-extrabold mb-5 md:mb-6 text-dg-white"
+          className="font-syne font-head font-extrabold mb-4 md:mb-6 text-dg-white"
           style={{
-            fontSize: "clamp(1.3rem, 4.5vw, 3.2rem)",
+            fontSize: "clamp(1.25rem, 4.5vw, 3.2rem)",
             animation: "fadeUp 0.6s 0.1s ease both",
           }}
         >
@@ -58,23 +58,23 @@ const Hero = () => {
         </h1>
 
         <p
-          className="text-[0.95rem] md:text-[1.15rem] text-dg-grey max-w-[560px] leading-[1.75] mb-8 md:mb-10 font-light"
+          className="text-[0.82rem] md:text-[1.15rem] text-dg-grey max-w-[560px] leading-[1.7] mb-6 md:mb-10 font-light"
           style={{ animation: "fadeUp 0.6s 0.2s ease both" }}
         >
           Digital Gems integrates intelligent AI agents into your business — automating the repetitive, surfacing the insights, and giving your team back the time to do what matters: building relationships and growing your business.
         </p>
 
-        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4" style={{ animation: "fadeUp 0.6s 0.3s ease both" }}>
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4" style={{ animation: "fadeUp 0.6s 0.3s ease both" }}>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 text-[0.78rem] md:text-[0.82rem] tracking-normal rounded-lg no-underline transition-all hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 text-[0.72rem] md:text-[0.82rem] tracking-normal rounded-lg no-underline transition-all hover:-translate-y-0.5"
             style={{
               fontFamily: "'Syne', sans-serif",
               fontWeight: 700,
               lineHeight: "1.5",
               background: "hsl(170 100% 45%)",
               color: "hsl(213 56% 6%)",
-              padding: "13px 28px",
+              padding: "11px 22px",
               boxShadow: "0 0 30px rgba(0,229,200,0.2)",
             }}
           >
@@ -83,9 +83,9 @@ const Hero = () => {
           </a>
           <a
             href="#how"
-            className="inline-flex items-center gap-2 font-medium text-[0.85rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline text-dg-white transition-all"
+            className="inline-flex items-center gap-2 font-medium text-[0.72rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline text-dg-white transition-all"
             style={{
-              padding: "13px 24px",
+              padding: "11px 20px",
               border: "1px solid rgba(255,255,255,0.15)",
               background: "transparent",
             }}

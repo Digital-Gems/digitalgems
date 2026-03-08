@@ -24,29 +24,29 @@ const testimonials = [
 const Testimonials = () => {
   const ref = useScrollReveal();
   return (
-    <section ref={ref} className="bg-dg-bg2 px-5 md:px-10 lg:px-[60px] py-16 md:py-[100px]">
-      <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">Client Results</div>
-      <h2 className="font-syne font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
+    <section ref={ref} className="bg-dg-bg2 px-4 md:px-10 lg:px-[60px] py-12 md:py-[100px]">
+      <div className="text-[0.62rem] md:text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3">Client Results</div>
+      <h2 className="font-syne font-head font-extrabold mb-3 md:mb-4 text-dg-white" style={{ fontSize: "clamp(1.15rem, 2.8vw, 2.4rem)" }}>
         What our clients say
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mt-10 md:mt-[60px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 mt-8 md:mt-[60px]">
         {testimonials.map((t) => (
           <div
             key={t.name}
-            className="rounded-[14px] p-6 md:p-8"
+            className="rounded-[14px] p-5 md:p-8"
             style={{
               background: "rgba(255,255,255,0.04)",
               border: "1px solid hsl(170 100% 45% / 0.12)",
             }}
           >
-            <div className="text-dg-gold text-[0.9rem] mb-4 tracking-[2px]">★★★★★</div>
-            <blockquote className="text-[0.85rem] md:text-[0.9rem] leading-[1.75] italic mb-5 border-none p-0" style={{ color: "rgba(240,244,255,0.8)" }}>
+            <div className="text-dg-gold text-[0.78rem] md:text-[0.9rem] mb-3 tracking-[2px]">★★★★★</div>
+            <blockquote className="text-[0.78rem] md:text-[0.9rem] leading-[1.7] italic mb-4 border-none p-0" style={{ color: "rgba(240,244,255,0.8)" }}>
               {t.quote}
             </blockquote>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2.5">
               <div
-                className="w-10 h-10 rounded-full flex items-center justify-center font-head text-[0.85rem] font-bold shrink-0"
+                className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center font-head text-[0.72rem] md:text-[0.85rem] font-bold shrink-0"
                 style={{
                   background: "linear-gradient(135deg, hsl(170 100% 45%), hsl(170 100% 33%))",
                   color: "hsl(213 56% 6%)",
@@ -55,8 +55,8 @@ const Testimonials = () => {
                 {t.initials}
               </div>
               <div>
-                <strong className="block text-[0.85rem] font-semibold text-dg-white">{t.name}</strong>
-                <span className="text-[0.78rem] text-dg-grey">{t.role}</span>
+                <strong className="block text-[0.75rem] md:text-[0.85rem] font-semibold text-dg-white">{t.name}</strong>
+                <span className="text-[0.68rem] md:text-[0.78rem] text-dg-grey">{t.role}</span>
               </div>
             </div>
           </div>
