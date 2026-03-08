@@ -66,7 +66,7 @@ const Hero = () => {
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4" style={{ animation: "fadeUp 0.6s 0.3s ease both" }}>
           <a
-            href="#contact"
+            href="/book-a-call"
             className="inline-flex items-center gap-2 text-[0.72rem] md:text-[0.82rem] tracking-normal rounded-lg no-underline transition-all hover:-translate-y-0.5"
             style={{
               fontFamily: "'Syne', sans-serif",
