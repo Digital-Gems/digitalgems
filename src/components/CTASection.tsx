@@ -47,7 +47,7 @@ const CTASection = () => {
           onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)")}
         />
         <a
-          href="#"
+          href="/book-a-call"
           className="inline-flex items-center justify-center gap-2 text-[0.72rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
           style={{
             fontFamily: "'Syne', sans-serif",

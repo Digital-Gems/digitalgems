@@ -39,9 +39,8 @@ const Footer = () => {
         <div>
           <h5 className="font-syne font-head text-[0.7rem] md:text-[0.8rem] font-bold tracking-[0.1em] uppercase text-dg-grey mb-3 md:mb-4">Contact</h5>
           <ul className="list-none flex flex-col gap-2">
-            {["Book a Call", "digitalgems@agentmail.to"].map((l) => (
-              <li key={l}><a href="#" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l}</a></li>
-            ))}
+            <li><a href="/book-a-call" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>Book a Call</a></li>
+            <li><a href="mailto:digitalgems@agentmail.to" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>digitalgems@agentmail.to</a></li>
             <li><a href="/privacy-policy" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>Privacy Policy</a></li>
           </ul>
         </div>

@@ -35,7 +35,7 @@ const Navbar = () => {
         </li>
         <li>
           <a
-            href="#contact"
+            href="/book-a-call"
             className="bg-dg-teal text-[0.85rem] font-bold no-underline rounded-md tracking-normal transition-all hover:bg-dg-teal-dim hover:-translate-y-px"
             style={{ color: "hsl(213 56% 6%)", padding: "10px 22px" }}
           >
@@ -79,7 +79,7 @@ const Navbar = () => {
             );
           })}
           <a
-            href="#contact"
+            href="/book-a-call"
             onClick={() => setOpen(false)}
             className="bg-dg-teal text-[0.85rem] font-bold no-underline rounded-md tracking-normal text-center"
             style={{ color: "hsl(213 56% 6%)", padding: "10px 22px" }}
