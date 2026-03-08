@@ -3,6 +3,7 @@ import { z } from "zod";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import { supabase } from "@/integrations/supabase/client";
 
 const formSchema = z.object({
   firstName: z.string().trim().min(1, "First name is required").max(100),
@@ -52,7 +53,9 @@ const BookACall = () => {
     if (errors[field]) setErrors((p) => ({ ...p, [field]: undefined }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = formSchema.safeParse(form);
     if (!result.success) {
@@ -65,7 +68,19 @@ const BookACall = () => {
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setSubmitting(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('send-booking-email', {
+        body: result.data,
+      });
+      if (error) throw error;
+      setSubmitted(true);
+    } catch (err) {
+      console.error('Booking submission error:', err);
+      setErrors({ email: 'Something went wrong. Please try again.' });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const Label = ({ text, optional }: { text: string; optional?: boolean }) => (
@@ -256,7 +271,7 @@ const BookACall = () => {
                   e.currentTarget.style.boxShadow = "0 0 30px rgba(0,229,200,0.2)";
                 }}
               >
-                Book My Free Call →
+                {submitting ? 'Sending…' : 'Book My Free Call →'}
               </button>
 
               <p className="text-center mt-4 text-[0.72rem] text-dg-grey">
