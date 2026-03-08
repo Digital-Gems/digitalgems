@@ -42,7 +42,7 @@ const Services = () => {
             <span className="text-[1.8rem] md:text-[2rem] mb-4 md:mb-5 block" style={{ filter: "drop-shadow(0 0 12px rgba(0,229,200,0.4))" }}>
               {s.icon}
             </span>
-            <h3 className="font-head text-[0.95rem] font-bold mb-2.5 tracking-[-0.01em] text-dg-white">{s.title}</h3>
+            <h3 className="font-head text-[0.95rem] font-bold mb-2.5 text-dg-white">{s.title}</h3>
             <p className="text-[0.85rem] md:text-[0.875rem] text-dg-grey leading-[1.7]">{s.desc}</p>
           </div>
         ))}

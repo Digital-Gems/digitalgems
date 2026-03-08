@@ -41,7 +41,7 @@ const HowItWorks = () => {
             >
               {s.num}
             </div>
-            <h3 className="font-head text-[1rem] font-bold mb-2.5 tracking-[-0.01em] text-dg-white">{s.title}</h3>
+            <h3 className="font-head text-[1rem] font-bold mb-2.5 text-dg-white">{s.title}</h3>
             <p className="text-[0.85rem] md:text-[0.875rem] text-dg-grey leading-[1.75]">{s.desc}</p>
             <span className="inline-block mt-3.5 text-[0.75rem] text-dg-teal font-semibold tracking-[0.05em] uppercase">
               {s.duration}

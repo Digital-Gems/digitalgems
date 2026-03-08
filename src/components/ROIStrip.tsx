@@ -14,7 +14,7 @@ const ROIStrip = () => {
       <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] items-center gap-8 md:gap-[60px] max-w-[1100px] mx-auto">
         <div>
           <h2
-            className="font-head font-extrabold tracking-[-0.03em] leading-[1.1]"
+            className="font-head font-extrabold"
             style={{ fontSize: "clamp(1.4rem, 2.5vw, 2.2rem)", color: "hsl(213 56% 6%)" }}
           >
             The numbers speak<br />for themselves
