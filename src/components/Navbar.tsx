@@ -10,7 +10,7 @@ const Navbar = () => {
         borderBottom: "1px solid hsl(170 100% 45% / 0.12)",
       }}
     >
-      <a href="#">
+      <a href="/">
         <img
           src={LOGO_SRC}
           alt="Digital Gems"
