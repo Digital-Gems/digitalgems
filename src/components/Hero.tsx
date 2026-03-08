@@ -6,7 +6,7 @@ const ArrowIcon = () => (
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden px-5 md:px-10 lg:px-[60px] pt-[120px] md:pt-[140px] pb-16 md:pb-20">
+    <section className="relative min-h-[100vh] flex items-center overflow-hidden px-5 md:px-10 lg:px-[60px] pt-[140px] md:pt-[180px] pb-20 md:pb-28">
       {/* Grid background */}
       <div
         className="absolute inset-0"
