@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Epilogue:wght@300&display=swap');
+
 
 @layer base {
   :root {
@@ -56,28 +56,30 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 300;
   }
   body {
     background: hsl(var(--bg));
     color: hsl(var(--white));
-    font-family: var(--font-body);
+    font-family: 'Epilogue', sans-serif;
     font-weight: 300;
     line-height: 1.6;
     overflow-x: hidden;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-head);
-    font-weight: 800;
+    font-family: 'Syne', sans-serif !important;
+    font-weight: 800 !important;
   }
   .font-head {
-    font-family: var(--font-head);
-    font-weight: 800;
+    font-family: 'Syne', sans-serif !important;
+    font-weight: 800 !important;
   }
 }
 
 /* Enforce font weights globally */
 h1, h2, h3, h4, h5, h6, .font-head {
-  font-family: var(--font-head) !important;
+  font-family: 'Syne', sans-serif !important;
   font-weight: 800 !important;
 }
 
