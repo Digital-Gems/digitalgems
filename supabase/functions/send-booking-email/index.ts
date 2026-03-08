@@ -47,7 +47,7 @@ serve(async (req) => {
         },
         body: JSON.stringify({
           from: 'Digital Gems Bookings <onboarding@resend.dev>',
-          to: ['digitalgems@agentmail.to'],
+          to: ['digitalgemsza@gmail.com'],
           subject: `New Discovery Call: ${firstName} ${surname}`,
           html: htmlBody,
           text: textBody,
