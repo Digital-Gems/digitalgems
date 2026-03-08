@@ -49,8 +49,14 @@ const Footer = () => {
         <div>
           <h5 className="font-syne font-head text-[0.7rem] md:text-[0.8rem] font-bold tracking-[0.1em] uppercase text-dg-grey mb-3 md:mb-4">Social</h5>
           <ul className="list-none flex flex-col gap-2">
-            {["LinkedIn", "Facebook", "Instagram", "TikTok", "X"].map((l) => (
-              <li key={l}><a href="#" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l}</a></li>
+            {[
+              { name: "LinkedIn", url: "https://www.linkedin.com/in/digital-gems-2724a9388/" },
+              { name: "Facebook", url: "https://www.facebook.com/people/Digital-Gems/61581871916275/" },
+              { name: "Instagram", url: "https://www.instagram.com/digitalgemsza/" },
+              { name: "TikTok", url: "https://www.tiktok.com/@digitalgems57" },
+              { name: "X", url: "https://x.com/DigitalGemsza" },
+            ].map((l) => (
+              <li key={l.name}><a href={l.url} target="_blank" rel="noopener noreferrer" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l.name}</a></li>
             ))}
           </ul>
         </div>
