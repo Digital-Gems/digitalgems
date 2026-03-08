@@ -41,7 +41,7 @@ const Industries = () => {
             }}
           >
             <span className="text-[1.4rem] md:text-[1.6rem] block mb-2 md:mb-3">{ind.emoji}</span>
-            <h4 className="font-head text-[0.78rem] md:text-[0.85rem] font-bold mb-1.5 tracking-normal text-dg-white">{ind.title}</h4>
+            <h4 className="font-head text-[0.85rem] md:text-[0.9rem] mb-1.5 tracking-normal text-dg-white" style={{ lineHeight: "1.6" }}>{ind.title}</h4>
             <p className="text-[0.68rem] md:text-[0.72rem] text-dg-grey leading-[1.5]">{ind.desc}</p>
           </div>
         ))}
