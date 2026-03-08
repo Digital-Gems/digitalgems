@@ -185,7 +185,7 @@ const PrivacyPolicy = () => {
       </section>
 
       {/* Content */}
-      <section style={{ padding: "60px 60px 80px", background: "hsl(var(--bg))" }}>
+      <section className="px-5 md:px-10 lg:px-[60px] py-10 md:py-[60px] pb-14 md:pb-20" style={{ background: "hsl(var(--bg))" }}>
         <div className="max-w-[860px] mx-auto flex flex-col gap-12">
           {sections.map((s) => (
             <article key={s.id} id={s.id} className="scroll-mt-28">
