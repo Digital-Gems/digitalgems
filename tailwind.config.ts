@@ -14,10 +14,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        syne: ['Syne', 'sans-serif'],
-        epilogue: ['Epilogue', 'sans-serif'],
-        head: ['Syne', 'sans-serif'],
-        body: ['Epilogue', 'sans-serif'],
+        syne: ['"Syne"', 'sans-serif'],
+        epilogue: ['"Epilogue"', 'sans-serif'],
+        head: ['"Syne"', 'sans-serif'],
+        body: ['"Epilogue"', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
