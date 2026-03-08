@@ -75,6 +75,12 @@
   }
 }
 
+/* Enforce font weights globally */
+h1, h2, h3, h4, h5, h6, .font-head {
+  font-family: var(--font-head) !important;
+  font-weight: 800 !important;
+}
+
 /* Noise texture overlay */
 body::before {
   content: '';
