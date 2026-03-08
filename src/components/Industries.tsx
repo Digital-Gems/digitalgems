@@ -41,9 +41,9 @@ const Industries = () => {
               e.currentTarget.style.background = "transparent";
             }}
           >
-            <span className="text-[2rem] block mb-3">{ind.emoji}</span>
-            <h4 className="font-head text-[0.95rem] font-bold mb-1.5 text-dg-white">{ind.title}</h4>
-            <p className="text-[0.78rem] text-dg-grey leading-[1.5]">{ind.desc}</p>
+            <span className="text-[1.6rem] block mb-3">{ind.emoji}</span>
+            <h4 className="font-head text-[0.82rem] font-bold mb-1.5 text-dg-white">{ind.title}</h4>
+            <p className="text-[0.72rem] text-dg-grey leading-[1.5]">{ind.desc}</p>
           </div>
         ))}
       </div>
