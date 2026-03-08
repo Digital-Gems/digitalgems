@@ -48,7 +48,7 @@ const Hero = () => {
         </div>
 
         <h1
-          className="font-head font-extrabold mb-5 md:mb-6 text-dg-white"
+          className="font-syne font-head font-extrabold mb-5 md:mb-6 text-dg-white"
           style={{
             fontSize: "clamp(1.6rem, 4.5vw, 3.2rem)",
             animation: "fadeUp 0.6s 0.1s ease both",

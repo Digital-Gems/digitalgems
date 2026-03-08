@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <section ref={ref} id="services" className="px-5 md:px-10 lg:px-[60px] py-16 md:py-[100px]">
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">What We Build</div>
-      <h2 className="font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
+      <h2 className="font-syne font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
         AI solutions tailored to<br className="hidden md:block" />how your business works
       </h2>
       <p className="text-dg-grey text-[0.95rem] md:text-[1.05rem] max-w-[560px] leading-[1.75] font-light">
