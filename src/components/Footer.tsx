@@ -8,7 +8,7 @@ const Footer = () => {
         borderTop: "1px solid hsl(170 100% 45% / 0.12)",
       }}
     >
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-6 md:gap-[60px] mb-6 md:mb-12">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-6 md:gap-[60px] mb-6 md:mb-12">
         <div className="col-span-2 sm:col-span-1">
           <a href="/">
             <img src={LOGO_SRC} alt="Digital Gems" className="h-[55px] md:h-[90px]" style={{ mixBlendMode: "screen", filter: "brightness(1.1)" }} />
