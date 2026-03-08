@@ -8,7 +8,7 @@ const Footer = () => {
         borderTop: "1px solid hsl(170 100% 45% / 0.12)",
       }}
     >
-      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-6 md:gap-[60px] mb-6 md:mb-12">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-6 md:gap-[60px] mb-6 md:mb-12">
         <div className="col-span-2 sm:col-span-1">
           <a href="/">
             <img src={LOGO_SRC} alt="Digital Gems" className="h-[55px] md:h-[90px]" style={{ mixBlendMode: "screen", filter: "brightness(1.1)" }} />
@@ -39,10 +39,19 @@ const Footer = () => {
         <div>
           <h5 className="font-syne font-head text-[0.7rem] md:text-[0.8rem] font-bold tracking-[0.1em] uppercase text-dg-grey mb-3 md:mb-4">Contact</h5>
           <ul className="list-none flex flex-col gap-2">
-            {["Book a Call", "hello@digitalgemsai.com", "LinkedIn"].map((l) => (
+            {["Book a Call", "digitalgems@agentmail.to"].map((l) => (
               <li key={l}><a href="#" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l}</a></li>
             ))}
             <li><a href="/privacy-policy" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 className="font-syne font-head text-[0.7rem] md:text-[0.8rem] font-bold tracking-[0.1em] uppercase text-dg-grey mb-3 md:mb-4">Social</h5>
+          <ul className="list-none flex flex-col gap-2">
+            {["LinkedIn", "Facebook", "Instagram", "TikTok", "X"].map((l) => (
+              <li key={l}><a href="#" className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l}</a></li>
+            ))}
           </ul>
         </div>
       </div>
