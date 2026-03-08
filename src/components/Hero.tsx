@@ -50,7 +50,7 @@ const Hero = () => {
         <h1
           className="font-head font-extrabold leading-[1.05] tracking-[-0.03em] mb-6 text-dg-white"
           style={{
-            fontSize: "clamp(2.8rem, 5.5vw, 5rem)",
+            fontSize: "clamp(2rem, 4vw, 3.2rem)",
             animation: "fadeUp 0.6s 0.1s ease both",
           }}
         >

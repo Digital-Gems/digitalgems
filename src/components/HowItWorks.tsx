@@ -32,7 +32,7 @@ const HowItWorks = () => {
         {steps.map((s) => (
           <div key={s.num} className="relative px-8">
             <div
-              className="w-[72px] h-[72px] rounded-full flex items-center justify-center font-head text-[1.4rem] font-extrabold text-dg-teal mb-7"
+              className="w-[60px] h-[60px] rounded-full flex items-center justify-center font-head text-[1.1rem] font-extrabold text-dg-teal mb-7"
               style={{
                 background: "hsl(213 56% 6%)",
                 border: "2px solid hsl(170 100% 45%)",

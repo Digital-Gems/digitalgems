@@ -30,7 +30,7 @@ const ROIStrip = () => {
             { num: "90 days", label: "Average to full ROI" },
           ].map((s) => (
             <div key={s.num} className="text-center">
-              <div className="font-head text-[2.8rem] font-extrabold tracking-[-0.03em] leading-none" style={{ color: "hsl(213 56% 6%)" }}>
+              <div className="font-head text-[2rem] font-extrabold tracking-[-0.03em] leading-none" style={{ color: "hsl(213 56% 6%)" }}>
                 {s.num}
               </div>
               <div className="text-[0.8rem] mt-1" style={{ color: "rgba(5,13,26,0.65)" }}>{s.label}</div>

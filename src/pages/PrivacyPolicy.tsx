@@ -150,7 +150,7 @@ const PrivacyPolicy = () => {
         />
         <h1
           className="relative z-[1] font-head font-extrabold text-dg-white tracking-[-0.03em] mb-4"
-          style={{ fontSize: "clamp(2.2rem, 4vw, 3.5rem)" }}
+          style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)" }}
         >
           Privacy Policy
         </h1>

@@ -54,7 +54,7 @@ const ProblemSolution = () => {
             border: "1px solid rgba(0,229,200,0.2)",
           }}
         >
-          <h3 className="font-head text-[1.6rem] font-bold mb-4 tracking-[-0.02em] text-dg-white">
+          <h3 className="font-head text-[1.25rem] font-bold mb-4 tracking-[-0.02em] text-dg-white">
             AI agents that work<br />while your team sleeps
           </h3>
           <p className="text-dg-grey text-[0.95rem] leading-[1.75] mb-7">
