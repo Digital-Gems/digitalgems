@@ -48,7 +48,7 @@ const CTASection = () => {
         />
         <a
           href="#"
-          className="inline-flex items-center gap-2 font-head font-bold text-[0.85rem] rounded-lg no-underline transition-all"
+          className="inline-flex items-center gap-2 font-head font-bold text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
           style={{
             background: "hsl(170 100% 45%)",
             color: "hsl(213 56% 6%)",

@@ -42,7 +42,7 @@ const Navbar = () => {
         <li>
           <a
             href="#contact"
-            className="bg-dg-teal text-[0.9rem] font-bold no-underline rounded-md transition-all hover:bg-dg-teal-dim hover:-translate-y-px"
+            className="bg-dg-teal text-[0.85rem] font-bold no-underline rounded-md tracking-normal transition-all hover:bg-dg-teal-dim hover:-translate-y-px"
             style={{ color: "hsl(213 56% 6%)", padding: "10px 22px" }}
           >
             Book a Free Call
