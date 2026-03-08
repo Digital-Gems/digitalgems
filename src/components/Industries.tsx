@@ -14,20 +14,20 @@ const industries = [
 const Industries = () => {
   const ref = useScrollReveal();
   return (
-    <section ref={ref} id="industries" className="px-5 md:px-10 lg:px-[60px] py-16 md:py-[100px]">
-      <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">Who We Work With</div>
-      <h2 className="font-syne font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
+    <section ref={ref} id="industries" className="px-4 md:px-10 lg:px-[60px] py-12 md:py-[100px]">
+      <div className="text-[0.62rem] md:text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3">Who We Work With</div>
+      <h2 className="font-syne font-head font-extrabold mb-3 md:mb-4 text-dg-white" style={{ fontSize: "clamp(1.15rem, 2.8vw, 2.4rem)" }}>
         Built for businesses that<br className="hidden md:block" />run on relationships
       </h2>
-      <p className="text-dg-grey text-[0.95rem] md:text-[1.05rem] max-w-[560px] leading-[1.75] font-light">
+      <p className="text-dg-grey text-[0.82rem] md:text-[1.05rem] max-w-[560px] leading-[1.7] font-light">
         We specialise in service-driven businesses where your team's time is your most valuable asset.
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4 mt-10 md:mt-[60px]">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 md:gap-4 mt-8 md:mt-[60px]">
         {industries.map((ind) => (
           <div
             key={ind.title}
-            className="rounded-xl text-center cursor-default transition-all p-5 md:p-7"
+            className="rounded-xl text-center cursor-default transition-all p-3.5 md:p-7"
             style={{
               border: "1px solid hsl(170 100% 45% / 0.12)",
             }}
@@ -40,9 +40,9 @@ const Industries = () => {
               e.currentTarget.style.background = "transparent";
             }}
           >
-            <span className="text-[1.4rem] md:text-[1.6rem] block mb-2 md:mb-3">{ind.emoji}</span>
-            <div className="text-[0.88rem] md:text-[0.95rem] mb-1.5 tracking-normal text-dg-white" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, lineHeight: "1.5" }}>{ind.title}</div>
-            <p className="text-[0.68rem] md:text-[0.72rem] text-dg-grey leading-[1.5]">{ind.desc}</p>
+            <span className="text-[1.1rem] md:text-[1.6rem] block mb-1.5 md:mb-3">{ind.emoji}</span>
+            <div className="text-[0.72rem] md:text-[0.95rem] mb-1 tracking-normal text-dg-white" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, lineHeight: "1.4" }}>{ind.title}</div>
+            <p className="text-[0.6rem] md:text-[0.72rem] text-dg-grey leading-[1.45]">{ind.desc}</p>
           </div>
         ))}
       </div>
