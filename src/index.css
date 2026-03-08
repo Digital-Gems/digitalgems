@@ -67,7 +67,8 @@
     line-height: 1.6;
     overflow-x: hidden;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6,
+  h1 *, h2 *, h3 *, h4 *, h5 *, h6 * {
     font-family: 'Syne', sans-serif !important;
     font-weight: 800 !important;
   }
@@ -78,7 +79,9 @@
 }
 
 /* Enforce font weights globally */
-h1, h2, h3, h4, h5, h6, .font-head {
+h1, h2, h3, h4, h5, h6,
+h1 *, h2 *, h3 *, h4 *, h5 *, h6 *,
+.font-head, .font-head * {
   font-family: 'Syne', sans-serif !important;
   font-weight: 800 !important;
 }
