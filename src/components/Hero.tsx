@@ -80,7 +80,7 @@ const Hero = () => {
           </a>
           <a
             href="#how"
-            className="inline-flex items-center gap-2 font-medium text-[0.85rem] rounded-lg no-underline text-dg-white transition-all"
+            className="inline-flex items-center gap-2 font-medium text-[0.88rem] tracking-normal rounded-lg no-underline text-dg-white transition-all"
             style={{
               padding: "15px 28px",
               border: "1px solid rgba(255,255,255,0.15)",
