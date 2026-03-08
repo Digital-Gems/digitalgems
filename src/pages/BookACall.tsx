@@ -271,7 +271,7 @@ const BookACall = () => {
                   e.currentTarget.style.boxShadow = "0 0 30px rgba(0,229,200,0.2)";
                 }}
               >
-                Book My Free Call →
+                {submitting ? 'Sending…' : 'Book My Free Call →'}
               </button>
 
               <p className="text-center mt-4 text-[0.72rem] text-dg-grey">
