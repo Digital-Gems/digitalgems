@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h5 className="font-head text-[0.8rem] font-bold tracking-[0.1em] uppercase text-dg-grey mb-4">Solutions</h5>
+          <h5 className="font-syne font-head text-[0.8rem] font-bold tracking-[0.1em] uppercase text-dg-grey mb-4">Solutions</h5>
           <ul className="list-none flex flex-col gap-2.5">
             {["Customer Service AI", "Workflow Automation", "AI Reporting", "Sales Automation", "Knowledge Agents"].map((l) => (
               <li key={l}><a href="#" className="text-[0.85rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l}</a></li>
