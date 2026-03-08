@@ -67,7 +67,7 @@ const Hero = () => {
         <div className="flex items-center gap-4" style={{ animation: "fadeUp 0.6s 0.3s ease both" }}>
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 font-head font-bold text-[0.95rem] rounded-lg no-underline transition-all hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 font-head font-bold text-[0.85rem] rounded-lg no-underline transition-all hover:-translate-y-0.5"
             style={{
               background: "hsl(170 100% 45%)",
               color: "hsl(213 56% 6%)",
