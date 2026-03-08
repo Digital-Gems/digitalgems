@@ -25,7 +25,7 @@ const CTASection = () => {
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">Get Started</div>
       <h2
         className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] max-w-[700px] mx-auto mb-5 text-dg-white"
-        style={{ fontSize: "clamp(2.2rem, 4vw, 3.8rem)" }}
+        style={{ fontSize: "clamp(1.8rem, 3vw, 2.8rem)" }}
       >
         Ready to give your team<br />their time back?
       </h2>

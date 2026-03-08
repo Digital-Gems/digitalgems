@@ -11,7 +11,7 @@ const HowItWorks = () => {
   return (
     <section ref={ref} id="how" className="bg-dg-bg2" style={{ padding: "100px 60px" }}>
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">The Process</div>
-      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(2rem, 3.5vw, 3.2rem)" }}>
+      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.4rem)" }}>
         From first call to live AI agent<br />in three simple steps
       </h2>
       <p className="text-dg-grey text-[1.05rem] max-w-[560px] leading-[1.75] font-light">
@@ -32,7 +32,7 @@ const HowItWorks = () => {
         {steps.map((s) => (
           <div key={s.num} className="relative px-8">
             <div
-              className="w-[72px] h-[72px] rounded-full flex items-center justify-center font-head text-[1.4rem] font-extrabold text-dg-teal mb-7"
+              className="w-[60px] h-[60px] rounded-full flex items-center justify-center font-head text-[1.1rem] font-extrabold text-dg-teal mb-7"
               style={{
                 background: "hsl(213 56% 6%)",
                 border: "2px solid hsl(170 100% 45%)",
@@ -41,7 +41,7 @@ const HowItWorks = () => {
             >
               {s.num}
             </div>
-            <h3 className="font-head text-[1.2rem] font-bold mb-2.5 tracking-[-0.01em] text-dg-white">{s.title}</h3>
+            <h3 className="font-head text-[1rem] font-bold mb-2.5 tracking-[-0.01em] text-dg-white">{s.title}</h3>
             <p className="text-[0.875rem] text-dg-grey leading-[1.75]">{s.desc}</p>
             <span className="inline-block mt-3.5 text-[0.75rem] text-dg-teal font-semibold tracking-[0.05em] uppercase">
               {s.duration}

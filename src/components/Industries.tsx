@@ -16,7 +16,7 @@ const Industries = () => {
   return (
     <section ref={ref} id="industries" style={{ padding: "100px 60px" }}>
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">Who We Work With</div>
-      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(2rem, 3.5vw, 3.2rem)" }}>
+      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.4rem)" }}>
         Built for businesses that<br />run on relationships
       </h2>
       <p className="text-dg-grey text-[1.05rem] max-w-[560px] leading-[1.75] font-light">

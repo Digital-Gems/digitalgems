@@ -21,7 +21,7 @@ const StatsBar = () => {
     >
       {stats.map((s) => (
         <div key={s.num} className="text-center p-2">
-          <div className="font-head text-[2.4rem] font-extrabold text-dg-teal tracking-[-0.03em] leading-none mb-1.5">
+          <div className="font-head text-[1.8rem] font-extrabold text-dg-teal tracking-[-0.03em] leading-none mb-1.5">
             {s.num}
           </div>
           <div className="text-[0.85rem] text-dg-grey">{s.label}</div>
