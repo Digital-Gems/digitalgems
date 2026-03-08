@@ -160,7 +160,7 @@ const PrivacyPolicy = () => {
       </section>
 
       {/* Table of contents */}
-      <section className="bg-dg-bg2" style={{ padding: "48px 60px" }}>
+      <section className="bg-dg-bg2 px-5 md:px-10 lg:px-[60px] py-8 md:py-12">
         <nav className="max-w-[860px] mx-auto">
           <h2 className="font-head text-dg-teal text-[1.1rem] font-bold mb-5 uppercase tracking-[0.06em]">
             Table of Contents
