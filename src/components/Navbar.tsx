@@ -65,7 +65,7 @@ const Navbar = () => {
             borderBottom: "1px solid hsl(170 100% 45% / 0.12)",
           }}
         >
-          {["Solutions|#services", "How It Works|#how", "Industries|#industries", "Results|#results"].map((item) => {
+          {["Solutions|#services", "How It Works|#how", "Industries|#industries"].map((item) => {
             const [label, href] = item.split("|");
             return (
               <a
