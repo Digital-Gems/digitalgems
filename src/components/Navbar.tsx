@@ -34,7 +34,6 @@ const Navbar = () => {
           <a href="#industries" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Industries</a>
         </li>
         <li>
-          <a href="#results" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Results</a>
         </li>
         <li>
           <a
