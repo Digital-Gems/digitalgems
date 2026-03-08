@@ -53,7 +53,9 @@ const BookACall = () => {
     if (errors[field]) setErrors((p) => ({ ...p, [field]: undefined }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const result = formSchema.safeParse(form);
     if (!result.success) {
@@ -66,7 +68,19 @@ const BookACall = () => {
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setSubmitting(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('send-booking-email', {
+        body: result.data,
+      });
+      if (error) throw error;
+      setSubmitted(true);
+    } catch (err) {
+      console.error('Booking submission error:', err);
+      setErrors({ email: 'Something went wrong. Please try again.' });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   const Label = ({ text, optional }: { text: string; optional?: boolean }) => (
