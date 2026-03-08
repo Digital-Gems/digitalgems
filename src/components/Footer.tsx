@@ -11,7 +11,7 @@ const Footer = () => {
     >
       <div className="grid gap-[60px] mb-12" style={{ gridTemplateColumns: "2fr 1fr 1fr 1fr" }}>
         <div>
-          <a href="#">
+          <a href="/">
             <img src={LOGO_SRC} alt="Digital Gems" className="h-[90px]" style={{ mixBlendMode: "screen", filter: "brightness(1.1)" }} />
           </a>
           <p className="text-[0.875rem] text-dg-grey mt-3 max-w-[240px] leading-[1.7]">
