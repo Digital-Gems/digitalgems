@@ -123,18 +123,6 @@ const sections = [
       </p>
     ),
   },
-  {
-    id: "data-request",
-    title: "15. How Can You Review, Update, or Delete the Data We Collect From You?",
-    content: (
-      <p>
-        Submit a data subject access request at:{" "}
-        <a href="https://app.termly.io/dsar/c74ede3d-9554-4536-8bfc-8e8e94cfdb6c" target="_blank" rel="noopener noreferrer" className="text-dg-teal hover:underline break-all">
-          https://app.termly.io/dsar/c74ede3d-9554-4536-8bfc-8e8e94cfdb6c
-        </a>
-      </p>
-    ),
-  },
 ];
 
 const PrivacyPolicy = () => {
