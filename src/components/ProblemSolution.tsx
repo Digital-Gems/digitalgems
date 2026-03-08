@@ -22,7 +22,7 @@ const ProblemSolution = () => {
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">
         The Problem We Solve
       </div>
-      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(2rem, 3.5vw, 3.2rem)" }}>
+      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.4rem)" }}>
         Your team is buried in tasks<br />that shouldn't need humans
       </h2>
 
