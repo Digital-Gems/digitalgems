@@ -42,7 +42,7 @@ const Services = () => {
             <span className="text-[1.8rem] md:text-[2rem] mb-4 md:mb-5 block" style={{ filter: "drop-shadow(0 0 12px rgba(0,229,200,0.4))" }}>
               {s.icon}
             </span>
-            <h3 className="font-head text-[0.95rem] font-bold mb-2.5 text-dg-white">{s.title}</h3>
+            <div className="text-[1rem] md:text-[1.05rem] mb-2.5 text-dg-white" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, lineHeight: "1.5" }}>{s.title}</div>
             <p className="text-[0.85rem] md:text-[0.875rem] text-dg-grey leading-[1.7]">{s.desc}</p>
           </div>
         ))}
