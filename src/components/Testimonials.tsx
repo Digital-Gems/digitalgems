@@ -24,24 +24,24 @@ const testimonials = [
 const Testimonials = () => {
   const ref = useScrollReveal();
   return (
-    <section ref={ref} className="bg-dg-bg2" style={{ padding: "100px 60px" }}>
+    <section ref={ref} className="bg-dg-bg2 px-5 md:px-10 lg:px-[60px] py-16 md:py-[100px]">
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">Client Results</div>
-      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.4rem)" }}>
+      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
         What our clients say
       </h2>
 
-      <div className="grid grid-cols-3 gap-6 mt-[60px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mt-10 md:mt-[60px]">
         {testimonials.map((t) => (
           <div
             key={t.name}
-            className="rounded-[14px] p-8"
+            className="rounded-[14px] p-6 md:p-8"
             style={{
               background: "rgba(255,255,255,0.04)",
               border: "1px solid hsl(170 100% 45% / 0.12)",
             }}
           >
             <div className="text-dg-gold text-[0.9rem] mb-4 tracking-[2px]">★★★★★</div>
-            <blockquote className="text-[0.9rem] leading-[1.75] italic mb-5 border-none p-0" style={{ color: "rgba(240,244,255,0.8)" }}>
+            <blockquote className="text-[0.85rem] md:text-[0.9rem] leading-[1.75] italic mb-5 border-none p-0" style={{ color: "rgba(240,244,255,0.8)" }}>
               {t.quote}
             </blockquote>
             <div className="flex items-center gap-3">

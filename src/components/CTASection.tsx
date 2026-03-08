@@ -9,7 +9,7 @@ const ArrowIcon = () => (
 const CTASection = () => {
   const ref = useScrollReveal();
   return (
-    <section ref={ref} id="contact" className="text-center relative overflow-hidden" style={{ padding: "120px 60px" }}>
+    <section ref={ref} id="contact" className="text-center relative overflow-hidden px-5 md:px-10 lg:px-[60px] py-16 md:py-[120px]">
       <div
         className="absolute pointer-events-none"
         style={{
@@ -25,22 +25,22 @@ const CTASection = () => {
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">Get Started</div>
       <h2
         className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] max-w-[700px] mx-auto mb-5 text-dg-white"
-        style={{ fontSize: "clamp(1.8rem, 3vw, 2.8rem)" }}
+        style={{ fontSize: "clamp(1.4rem, 3vw, 2.8rem)" }}
       >
         Ready to give your team<br />their time back?
       </h2>
-      <p className="text-dg-grey text-[1.05rem] max-w-[480px] mx-auto mb-10 font-light">
+      <p className="text-dg-grey text-[0.95rem] md:text-[1.05rem] max-w-[480px] mx-auto mb-8 md:mb-10 font-light">
         Book a free 30-minute discovery call. We'll map out exactly where AI can save you the most time — no obligation, no jargon.
       </p>
-      <div className="flex gap-3 justify-center flex-wrap relative z-[1]">
+      <div className="flex flex-col sm:flex-row gap-3 justify-center flex-wrap relative z-[1]">
         <input
           type="email"
           placeholder="Your work email address"
-          className="rounded-lg text-[0.95rem] outline-none transition-all w-[280px] text-dg-white placeholder:text-dg-grey"
+          className="rounded-lg text-[0.9rem] md:text-[0.95rem] outline-none transition-all w-full sm:w-[280px] text-dg-white placeholder:text-dg-grey"
           style={{
             background: "rgba(255,255,255,0.07)",
             border: "1px solid rgba(255,255,255,0.15)",
-            padding: "14px 20px",
+            padding: "13px 20px",
             fontFamily: "var(--font-body)",
           }}
           onFocus={(e) => (e.currentTarget.style.borderColor = "hsl(170 100% 45%)")}
@@ -48,11 +48,11 @@ const CTASection = () => {
         />
         <a
           href="#"
-          className="inline-flex items-center gap-2 font-head font-bold text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
+          className="inline-flex items-center justify-center gap-2 font-head font-bold text-[0.85rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
           style={{
             background: "hsl(170 100% 45%)",
             color: "hsl(213 56% 6%)",
-            padding: "15px 32px",
+            padding: "13px 28px",
             boxShadow: "0 0 30px rgba(0,229,200,0.2)",
           }}
         >
@@ -60,7 +60,7 @@ const CTASection = () => {
           <ArrowIcon />
         </a>
       </div>
-      <p className="mt-4 text-[0.78rem] text-dg-grey relative z-[1]">
+      <p className="mt-4 text-[0.75rem] md:text-[0.78rem] text-dg-grey relative z-[1]">
         No commitment required · Response within 24 hours · Free audit included
       </p>
     </section>

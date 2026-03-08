@@ -9,30 +9,30 @@ const steps = [
 const HowItWorks = () => {
   const ref = useScrollReveal();
   return (
-    <section ref={ref} id="how" className="bg-dg-bg2" style={{ padding: "100px 60px" }}>
+    <section ref={ref} id="how" className="bg-dg-bg2 px-5 md:px-10 lg:px-[60px] py-16 md:py-[100px]">
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">The Process</div>
-      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.4rem)" }}>
-        From first call to live AI agent<br />in three simple steps
+      <h2 className="font-head font-extrabold tracking-[-0.03em] leading-[1.1] mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
+        From first call to live AI agent<br className="hidden md:block" />in three simple steps
       </h2>
-      <p className="text-dg-grey text-[1.05rem] max-w-[560px] leading-[1.75] font-light">
+      <p className="text-dg-grey text-[0.95rem] md:text-[1.05rem] max-w-[560px] leading-[1.75] font-light">
         We keep it simple, fast, and collaborative — you'll know exactly what's happening at every stage.
       </p>
 
-      <div className="grid grid-cols-3 relative mt-[70px]">
-        {/* Connecting line */}
+      <div className="grid grid-cols-1 md:grid-cols-3 relative mt-10 md:mt-[70px] gap-8 md:gap-0">
+        {/* Connecting line - desktop only */}
         <div
-          className="absolute h-px"
+          className="absolute h-px hidden md:block"
           style={{
-            top: 36,
+            top: 30,
             left: "calc(16.66% + 20px)",
             right: "calc(16.66% + 20px)",
             background: "linear-gradient(90deg, hsl(170 100% 45%), rgba(0,229,200,0.2), hsl(170 100% 45%))",
           }}
         />
         {steps.map((s) => (
-          <div key={s.num} className="relative px-8">
+          <div key={s.num} className="relative px-0 md:px-8">
             <div
-              className="w-[60px] h-[60px] rounded-full flex items-center justify-center font-head text-[1.1rem] font-extrabold text-dg-teal mb-7"
+              className="w-[56px] h-[56px] md:w-[60px] md:h-[60px] rounded-full flex items-center justify-center font-head text-[1rem] md:text-[1.1rem] font-extrabold text-dg-teal mb-5 md:mb-7"
               style={{
                 background: "hsl(213 56% 6%)",
                 border: "2px solid hsl(170 100% 45%)",
@@ -42,7 +42,7 @@ const HowItWorks = () => {
               {s.num}
             </div>
             <h3 className="font-head text-[1rem] font-bold mb-2.5 tracking-[-0.01em] text-dg-white">{s.title}</h3>
-            <p className="text-[0.875rem] text-dg-grey leading-[1.75]">{s.desc}</p>
+            <p className="text-[0.85rem] md:text-[0.875rem] text-dg-grey leading-[1.75]">{s.desc}</p>
             <span className="inline-block mt-3.5 text-[0.75rem] text-dg-teal font-semibold tracking-[0.05em] uppercase">
               {s.duration}
             </span>

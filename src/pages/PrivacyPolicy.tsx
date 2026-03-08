@@ -136,8 +136,8 @@ const PrivacyPolicy = () => {
 
       {/* Hero */}
       <section
-        className="relative flex flex-col items-center justify-center text-center"
-        style={{ padding: "160px 60px 60px", background: "hsl(var(--bg))" }}
+        className="relative flex flex-col items-center justify-center text-center px-5 md:px-10 lg:px-[60px] pt-[120px] md:pt-[160px] pb-10 md:pb-[60px]"
+        style={{ background: "hsl(var(--bg))" }}
       >
         <div
           className="absolute inset-0"
@@ -150,17 +150,17 @@ const PrivacyPolicy = () => {
         />
         <h1
           className="relative z-[1] font-head font-extrabold text-dg-white tracking-[-0.03em] mb-4"
-          style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)" }}
+          style={{ fontSize: "clamp(1.6rem, 3vw, 2.6rem)" }}
         >
           Privacy Policy
         </h1>
-        <p className="relative z-[1] text-dg-teal text-[1rem] font-medium tracking-wide">
+        <p className="relative z-[1] text-dg-teal text-[0.9rem] md:text-[1rem] font-medium tracking-wide">
           Last updated March 08, 2026
         </p>
       </section>
 
       {/* Table of contents */}
-      <section className="bg-dg-bg2" style={{ padding: "48px 60px" }}>
+      <section className="bg-dg-bg2 px-5 md:px-10 lg:px-[60px] py-8 md:py-12">
         <nav className="max-w-[860px] mx-auto">
           <h2 className="font-head text-dg-teal text-[1.1rem] font-bold mb-5 uppercase tracking-[0.06em]">
             Table of Contents
@@ -185,7 +185,7 @@ const PrivacyPolicy = () => {
       </section>
 
       {/* Content */}
-      <section style={{ padding: "60px 60px 80px", background: "hsl(var(--bg))" }}>
+      <section className="px-5 md:px-10 lg:px-[60px] py-10 md:py-[60px] pb-14 md:pb-20" style={{ background: "hsl(var(--bg))" }}>
         <div className="max-w-[860px] mx-auto flex flex-col gap-12">
           {sections.map((s) => (
             <article key={s.id} id={s.id} className="scroll-mt-28">
