@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Epilogue:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Epilogue:wght@300&display=swap');
 
 @layer base {
   :root {
@@ -61,9 +61,13 @@
     background: hsl(var(--bg));
     color: hsl(var(--white));
     font-family: var(--font-body);
-    font-weight: 400;
+    font-weight: 300;
     line-height: 1.6;
     overflow-x: hidden;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-head);
+    font-weight: 800;
   }
 }
 
