@@ -11,7 +11,7 @@ const HowItWorks = () => {
   return (
     <section ref={ref} id="how" className="bg-dg-bg2 px-5 md:px-10 lg:px-[60px] py-16 md:py-[100px]">
       <div className="text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3.5">The Process</div>
-      <h2 className="font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
+      <h2 className="font-syne font-head font-extrabold mb-4 text-dg-white" style={{ fontSize: "clamp(1.4rem, 2.8vw, 2.4rem)" }}>
         From first call to live AI agent<br className="hidden md:block" />in three simple steps
       </h2>
       <p className="text-dg-grey text-[0.95rem] md:text-[1.05rem] max-w-[560px] leading-[1.75] font-light">
@@ -41,7 +41,7 @@ const HowItWorks = () => {
             >
               {s.num}
             </div>
-            <h3 className="font-head text-[1rem] font-bold mb-2.5 text-dg-white">{s.title}</h3>
+            <h3 className="font-syne font-head text-[1rem] font-bold mb-2.5 text-dg-white">{s.title}</h3>
             <p className="text-[0.85rem] md:text-[0.875rem] text-dg-grey leading-[1.75]">{s.desc}</p>
             <span className="inline-block mt-3.5 text-[0.75rem] text-dg-teal font-semibold tracking-[0.05em] uppercase">
               {s.duration}
