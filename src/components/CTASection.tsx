@@ -48,8 +48,11 @@ const CTASection = () => {
         />
         <a
           href="#"
-          className="inline-flex items-center justify-center gap-2 font-head font-bold text-[0.85rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
+          className="inline-flex items-center justify-center gap-2 text-[0.85rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
           style={{
+            fontFamily: "'Syne', sans-serif",
+            fontWeight: 700,
+            lineHeight: "1.5",
             background: "hsl(170 100% 45%)",
             color: "hsl(213 56% 6%)",
             padding: "13px 28px",
