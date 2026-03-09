@@ -20,7 +20,7 @@ serve(async (req) => {
       });
     }
 
-    const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY');
+    const AGENTMAIL_API_KEY = Deno.env.get('AGENTMAIL_API_KEY');
 
     // Build email body
     const htmlBody = `
@@ -37,18 +37,19 @@ serve(async (req) => {
 
     const textBody = `New Discovery Call Booking\n\nFirst Name: ${firstName}\nSurname: ${surname}\nPhone: ${phone}\nEmail: ${email}\nCompany: ${company || 'Not provided'}\nNotes: ${notes || 'None'}`;
 
-    if (RESEND_API_KEY) {
-      // Use Resend if API key is available
-      const res = await fetch('https://api.resend.com/emails', {
+    if (AGENTMAIL_API_KEY) {
+      // Use Agentmail API to send email to the inbox
+      const inboxId = 'digitalgems@agentmail.to';
+      
+      const res = await fetch(`https://api.agentmail.to/v0/inboxes/${encodeURIComponent(inboxId)}/messages`, {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${RESEND_API_KEY}`,
+          'Authorization': `Bearer ${AGENTMAIL_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          from: 'Digital Gems Bookings <onboarding@resend.dev>',
-          to: ['digitalgemsza@gmail.com'],
-          subject: `New Discovery Call: ${firstName} ${surname}`,
+          to: [email], // Send confirmation to the user who booked
+          subject: `Discovery Call Booking Received - ${firstName} ${surname}`,
           html: htmlBody,
           text: textBody,
         }),
@@ -56,7 +57,7 @@ serve(async (req) => {
 
       const data = await res.json();
       if (!res.ok) {
-        console.error('Resend error:', data);
+        console.error('Agentmail error:', data);
         throw new Error(`Email send failed: ${JSON.stringify(data)}`);
       }
 
