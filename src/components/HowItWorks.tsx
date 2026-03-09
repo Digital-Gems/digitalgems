@@ -12,7 +12,7 @@ const HowItWorks = () => {
     <section ref={ref} id="how" className="bg-dg-bg2 px-4 md:px-10 lg:px-[60px] py-12 md:py-[100px]">
       <div className="text-[0.62rem] md:text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3">The Process</div>
       <h2 className="font-syne font-head font-extrabold mb-3 md:mb-4 text-dg-white" style={{ fontSize: "clamp(1.15rem, 2.8vw, 2.4rem)" }}>
-        From first call to live AI agent<br className="hidden md:block" />in three simple steps
+        From first call to live AI agent{' '}<br className="hidden md:block" />in three simple steps
       </h2>
       <p className="text-dg-grey text-[0.82rem] md:text-[1.05rem] max-w-[560px] leading-[1.7] font-light">
         We keep it simple, fast, and collaborative — you'll know exactly what's happening at every stage.

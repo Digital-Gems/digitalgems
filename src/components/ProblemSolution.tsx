@@ -23,7 +23,7 @@ const ProblemSolution = () => {
         The Problem We Solve
       </div>
       <h2 className="font-syne font-head font-extrabold mb-3 md:mb-4 text-dg-white" style={{ fontSize: "clamp(1.15rem, 2.8vw, 2.4rem)" }}>
-        Your team is buried in tasks<br className="hidden md:block" />that shouldn't need humans
+        Your team is buried in tasks{' '}<br className="hidden md:block" />that shouldn't need humans
       </h2>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20 items-center mt-8 md:mt-[60px]">
