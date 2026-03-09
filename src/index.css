@@ -85,6 +85,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.3 !important;
 }
 
+/* Better mobile spacing for wrapped headings */
+@media (max-width: 768px) {
+  h2 {
+    line-height: 1.5 !important;
+  }
+}
+
 .font-syne {
   font-family: 'Syne', sans-serif !important;
 }
