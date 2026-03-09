@@ -38,18 +38,17 @@ serve(async (req) => {
     const textBody = `New Discovery Call Booking\n\nFirst Name: ${firstName}\nSurname: ${surname}\nPhone: ${phone}\nEmail: ${email}\nCompany: ${company || 'Not provided'}\nNotes: ${notes || 'None'}`;
 
     if (AGENTMAIL_API_KEY) {
-      // Use Agentmail API to send email from the inbox
-      const inboxId = 'digitalgems';
-      
-      const res = await fetch(`https://api.agentmail.to/v0/inboxes/${inboxId}/messages`, {
+      const inboxId = encodeURIComponent('digitalgems@agentmail.to');
+
+      const res = await fetch(`https://api.agentmail.to/v0/inboxes/${inboxId}/messages/send`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${AGENTMAIL_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          to: [email], // Send confirmation to the user who booked
-          subject: `Discovery Call Booking Received - ${firstName} ${surname}`,
+          to: ['digitalgems@agentmail.to'],
+          subject: `New Discovery Call Booking: ${firstName} ${surname}`,
           html: htmlBody,
           text: textBody,
         }),
@@ -64,6 +63,7 @@ serve(async (req) => {
       return new Response(JSON.stringify({ success: true }), {
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
       });
+
     } else {
       // Fallback: log the booking (no email provider configured)
       console.log('=== NEW BOOKING (no email provider) ===');
