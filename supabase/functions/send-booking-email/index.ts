@@ -38,10 +38,10 @@ serve(async (req) => {
     const textBody = `New Discovery Call Booking\n\nFirst Name: ${firstName}\nSurname: ${surname}\nPhone: ${phone}\nEmail: ${email}\nCompany: ${company || 'Not provided'}\nNotes: ${notes || 'None'}`;
 
     if (AGENTMAIL_API_KEY) {
-      // Use Agentmail API to send email to the inbox
-      const inboxId = 'digitalgems@agentmail.to';
+      // Use Agentmail API to send email from the inbox
+      const inboxId = 'digitalgems';
       
-      const res = await fetch(`https://api.agentmail.to/v0/inboxes/${encodeURIComponent(inboxId)}/messages`, {
+      const res = await fetch(`https://api.agentmail.to/v0/inboxes/${inboxId}/messages`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${AGENTMAIL_API_KEY}`,
