@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const ArrowIcon = () => (
@@ -8,6 +10,14 @@ const ArrowIcon = () => (
 
 const CTASection = () => {
   const ref = useScrollReveal();
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const trimmed = email.trim();
+    navigate(trimmed ? `/book-a-call?email=${encodeURIComponent(trimmed)}` : "/book-a-call");
+  };
   return (
     <section ref={ref} id="contact" className="text-center relative overflow-hidden px-4 md:px-10 lg:px-[60px] py-12 md:py-[120px]">
       <div
