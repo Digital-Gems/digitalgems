@@ -42,10 +42,15 @@ const CTASection = () => {
       <p className="text-dg-grey text-[0.82rem] md:text-[1.05rem] max-w-[480px] mx-auto mb-6 md:mb-10 font-light">
         Book a free 30-minute discovery call. We'll map out exactly where AI can save you the most time — no obligation, no jargon.
       </p>
-      <div className="flex flex-col sm:flex-row gap-2.5 md:gap-3 justify-center flex-wrap relative z-[1]">
+      <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2.5 md:gap-3 justify-center flex-wrap relative z-[1]">
+        <label htmlFor="cta-email" className="sr-only">Your work email address</label>
         <input
+          id="cta-email"
+          name="email"
           type="email"
           placeholder="Your work email address"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="rounded-lg text-[0.78rem] md:text-[0.95rem] outline-none transition-all w-full sm:w-[280px] text-dg-white placeholder:text-dg-grey"
           style={{
             background: "rgba(255,255,255,0.07)",
@@ -56,8 +61,8 @@ const CTASection = () => {
           onFocus={(e) => (e.currentTarget.style.borderColor = "hsl(170 100% 45%)")}
           onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.15)")}
         />
-        <a
-          href="/book-a-call"
+        <button
+          type="submit"
           className="inline-flex items-center justify-center gap-2 text-[0.72rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
           style={{
             fontFamily: "'Syne', sans-serif",
@@ -66,13 +71,15 @@ const CTASection = () => {
             background: "hsl(170 100% 45%)",
             color: "hsl(213 56% 6%)",
             padding: "11px 22px",
+            border: "none",
+            cursor: "pointer",
             boxShadow: "0 0 30px rgba(0,229,200,0.2)",
           }}
         >
           Book Free Discovery Call
           <ArrowIcon />
-        </a>
-      </div>
+        </button>
+      </form>
       <p className="mt-3 md:mt-4 text-[0.65rem] md:text-[0.78rem] text-dg-grey relative z-[1]">
         No commitment required · Response within 24 hours · Free audit included
       </p>
