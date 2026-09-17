@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Seo from "@/components/Seo";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -132,6 +133,11 @@ const PrivacyPolicy = () => {
 
   return (
     <>
+      <Seo
+        title="Privacy Policy | Digital Gems"
+        description="How Digital Gems collects, uses, shares and protects your personal information, including our use of AI tools and your privacy rights."
+        path="/privacy-policy"
+      />
       <Navbar />
 
       {/* Hero */}

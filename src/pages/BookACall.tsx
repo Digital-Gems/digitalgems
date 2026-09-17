@@ -2,7 +2,8 @@ import { useState } from "react";
 import { z } from "zod";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
+import Seo from "@/components/Seo";
 import { supabase } from "@/integrations/supabase/client";
 
 const formSchema = z.object({
@@ -30,13 +31,14 @@ const inputStyle: React.CSSProperties = {
 };
 
 const BookACall = () => {
+  const [searchParams] = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [form, setForm] = useState<FormData>({
     firstName: "",
     surname: "",
     phone: "",
-    email: "",
+    email: searchParams.get("email") ?? "",
     company: "",
     notes: "",
   });
@@ -83,8 +85,9 @@ const BookACall = () => {
     }
   };
 
-  const Label = ({ text, optional }: { text: string; optional?: boolean }) => (
+  const Label = ({ text, optional, htmlFor }: { text: string; optional?: boolean; htmlFor: string }) => (
     <label
+      htmlFor={htmlFor}
       className="block mb-1.5"
       style={{ fontFamily: "'Epilogue', sans-serif", fontWeight: 500, fontSize: "0.85rem", color: "#f0f4ff" }}
     >
@@ -98,6 +101,11 @@ const BookACall = () => {
 
   return (
     <>
+      <Seo
+        title="Book a Free Discovery Call | Digital Gems"
+        description="Book a free 30-minute discovery call with Digital Gems and see where AI agents can save your team the most time. Reply within 24 hours."
+        path="/book-a-call"
+      />
       <Navbar />
 
       <section className="relative min-h-[100vh] flex flex-col items-center overflow-hidden px-4 md:px-10 lg:px-[60px] pt-[130px] md:pt-[180px] pb-16 md:pb-28">
@@ -168,8 +176,10 @@ const BookACall = () => {
           {!submitted ? (
             <form onSubmit={handleSubmit} noValidate>
               <div className="mb-4">
-                <Label text="First Name" />
+                <Label text="First Name" htmlFor="firstName" />
                 <input
+                  id="firstName"
+                  name="firstName"
                   type="text"
                   placeholder="Your first name"
                   value={form.firstName}
@@ -182,8 +192,10 @@ const BookACall = () => {
               </div>
 
               <div className="mb-4">
-                <Label text="Surname" />
+                <Label text="Surname" htmlFor="surname" />
                 <input
+                  id="surname"
+                  name="surname"
                   type="text"
                   placeholder="Your surname"
                   value={form.surname}
@@ -196,8 +208,10 @@ const BookACall = () => {
               </div>
 
               <div className="mb-4">
-                <Label text="Phone Number" />
+                <Label text="Phone Number" htmlFor="phone" />
                 <input
+                  id="phone"
+                  name="phone"
                   type="tel"
                   placeholder="Your phone number"
                   value={form.phone}
@@ -210,8 +224,10 @@ const BookACall = () => {
               </div>
 
               <div className="mb-4">
-                <Label text="Email Address" />
+                <Label text="Email Address" htmlFor="email" />
                 <input
+                  id="email"
+                  name="email"
                   type="email"
                   placeholder="Your work email address"
                   value={form.email}
@@ -224,8 +240,10 @@ const BookACall = () => {
               </div>
 
               <div className="mb-4">
-                <Label text="Company" optional />
+                <Label text="Company" optional htmlFor="company" />
                 <input
+                  id="company"
+                  name="company"
                   type="text"
                   placeholder="Your company name (optional)"
                   value={form.company}
@@ -237,8 +255,10 @@ const BookACall = () => {
               </div>
 
               <div className="mb-6">
-                <Label text="Notes" optional />
+                <Label text="Notes" optional htmlFor="notes" />
                 <textarea
+                  id="notes"
+                  name="notes"
                   rows={5}
                   placeholder="Anything you'd like us to know before the call? e.g. your industry, main challenges, tools you currently use"
                   value={form.notes}
