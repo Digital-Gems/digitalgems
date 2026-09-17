@@ -31,13 +31,14 @@ const inputStyle: React.CSSProperties = {
 };
 
 const BookACall = () => {
+  const [searchParams] = useSearchParams();
   const [submitted, setSubmitted] = useState(false);
   const [errors, setErrors] = useState<Partial<Record<keyof FormData, string>>>({});
   const [form, setForm] = useState<FormData>({
     firstName: "",
     surname: "",
     phone: "",
-    email: "",
+    email: searchParams.get("email") ?? "",
     company: "",
     notes: "",
   });
@@ -100,6 +101,11 @@ const BookACall = () => {
 
   return (
     <>
+      <Seo
+        title="Book a Free Discovery Call | Digital Gems"
+        description="Book a free 30-minute discovery call with Digital Gems and see where AI agents can save your team the most time. Reply within 24 hours."
+        path="/book-a-call"
+      />
       <Navbar />
 
       <section className="relative min-h-[100vh] flex flex-col items-center overflow-hidden px-4 md:px-10 lg:px-[60px] pt-[130px] md:pt-[180px] pb-16 md:pb-28">
