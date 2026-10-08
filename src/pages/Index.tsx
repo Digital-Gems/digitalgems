@@ -8,7 +8,6 @@ import HowItWorks from "@/components/HowItWorks";
 import ROIStrip from "@/components/ROIStrip";
 import Industries from "@/components/Industries";
 import Testimonials from "@/components/Testimonials";
-import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -16,7 +15,7 @@ const Index = () => {
     <>
       <Seo
         title="Digital Gems — AI Integration Specialists"
-        description="Custom AI agents that automate admin, speed up customer replies and give your team back hours every week. Book a free discovery call."
+        description="Custom AI agents that automate admin, speed up customer replies and give your team back hours every week."
         path="/"
       />
       <Navbar />
@@ -28,7 +27,6 @@ const Index = () => {
       <ROIStrip />
       <Industries />
       <Testimonials />
-      <CTASection />
       <Footer />
     </>
   );

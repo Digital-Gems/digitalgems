@@ -1,9 +1,3 @@
-const ArrowIcon = () => (
-  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-    <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-  </svg>
-);
-
 const Hero = () => {
   return (
     <section className="relative min-h-[100vh] flex items-center overflow-hidden px-4 md:px-10 lg:px-[60px] pt-[110px] md:pt-[180px] pb-16 md:pb-28">
@@ -65,22 +59,6 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4" style={{ animation: "fadeUp 0.6s 0.3s ease both" }}>
-          <a
-            href="/book-a-call"
-            className="inline-flex items-center gap-2 text-[0.72rem] md:text-[0.82rem] tracking-normal rounded-lg no-underline transition-all hover:-translate-y-0.5"
-            style={{
-              fontFamily: "'Syne', sans-serif",
-              fontWeight: 700,
-              lineHeight: "1.5",
-              background: "hsl(170 100% 45%)",
-              color: "hsl(213 56% 6%)",
-              padding: "11px 22px",
-              boxShadow: "0 0 30px rgba(0,229,200,0.2)",
-            }}
-          >
-            Book a Free Discovery Call
-            <ArrowIcon />
-          </a>
           <a
             href="#how"
             className="inline-flex items-center gap-2 font-medium text-[0.72rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline text-dg-white transition-all"
