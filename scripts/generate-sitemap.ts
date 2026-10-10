@@ -3,7 +3,7 @@
 import { writeFileSync } from "fs";
 import { resolve } from "path";
 
-const BASE_URL = "https://digitalgems.lovable.app";
+const BASE_URL = "https://www.digitalgems.co.za";
 
 interface SitemapEntry {
   path: string;
