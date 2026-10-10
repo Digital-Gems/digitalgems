@@ -28,6 +28,7 @@ const Index = () => {
       <ROIStrip />
       <Industries />
       <Testimonials />
+      <ContactSection />
       <Footer />
     </>
   );
