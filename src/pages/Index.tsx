@@ -6,6 +6,7 @@ import ProblemSolution from "@/components/ProblemSolution";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
 import Industries from "@/components/Industries";
+import DataSection from "@/components/DataSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -24,6 +25,7 @@ const Index = () => {
       <Services />
       <HowItWorks />
       <Industries />
+      <DataSection />
       <ContactSection />
       <Footer />
     </>
