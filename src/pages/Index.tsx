@@ -5,7 +5,6 @@ import StatsBar from "@/components/StatsBar";
 import ProblemSolution from "@/components/ProblemSolution";
 import Services from "@/components/Services";
 import HowItWorks from "@/components/HowItWorks";
-import ROIStrip from "@/components/ROIStrip";
 import Industries from "@/components/Industries";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -24,7 +23,6 @@ const Index = () => {
       <ProblemSolution />
       <Services />
       <HowItWorks />
-      <ROIStrip />
       <Industries />
       <ContactSection />
       <Footer />
