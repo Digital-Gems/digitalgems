@@ -1,13 +1,9 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const industries = [
-  { emoji: "🏢", title: "Professional Services", desc: "Law firms, accountants, consultants — automate client intake, billing, and reporting." },
-  { emoji: "🏡", title: "Real Estate", desc: "Automate lead follow-up, listing updates, and client communications at scale." },
-  { emoji: "🏥", title: "Healthcare & Wellness", desc: "Patient scheduling, reminder systems, and admin workflows — handled automatically." },
-  { emoji: "🛍️", title: "Retail & E-Commerce", desc: "Customer support agents, order tracking, and personalised recommendations that never sleep." },
-  { emoji: "💰", title: "Financial Services", desc: "Compliance documentation, client reporting, and data reconciliation — automated and accurate." },
-  { emoji: "🎓", title: "Education & Training", desc: "Enrolment, student queries, scheduling, and course administration handled by AI." },
-  { emoji: "🚚", title: "Logistics & Operations", desc: "Dispatch notifications, tracking updates, and supplier communications on autopilot." },
+  { emoji: "🏢", title: "Professional Services", desc: "Law firms, accountants, consultants: automate client intake, billing, and reporting." },
+  { emoji: "🏥", title: "Healthcare & Wellness", desc: "Patient scheduling, reminder systems, and admin workflows, handled automatically." },
+  { emoji: "💰", title: "Financial Services", desc: "Compliance documentation, client reporting, and data reconciliation, automated and accurate." },
   { emoji: "🔧", title: "Any Service Business", desc: "If your team handles repetitive tasks manually, we can likely automate a significant portion." },
 ];
 
