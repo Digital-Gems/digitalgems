@@ -37,8 +37,8 @@ const Industries = () => {
             }}
           >
             <span className="text-[1.1rem] md:text-[1.6rem] block mb-1.5 md:mb-3">{ind.emoji}</span>
-            <div className="text-[0.72rem] md:text-[0.95rem] mb-1 tracking-normal text-dg-white" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, lineHeight: "1.4" }}>{ind.title}</div>
-            <p className="text-[0.6rem] md:text-[0.72rem] text-dg-grey leading-[1.45]">{ind.desc}</p>
+            <div className="text-[0.82rem] md:text-[1rem] mb-1.5 tracking-normal text-dg-white" style={{ fontFamily: "'Syne', sans-serif", fontWeight: 700, lineHeight: "1.4" }}>{ind.title}</div>
+            <p className="text-[0.75rem] md:text-[0.85rem] text-dg-grey leading-[1.55]">{ind.desc}</p>
           </div>
         ))}
       </div>
