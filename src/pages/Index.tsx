@@ -13,8 +13,8 @@ const Index = () => {
   return (
     <>
       <Seo
-        title="Digital Gems — AI Integration Specialists"
-        description="Custom AI agents that automate admin, speed up customer replies and give your team back hours every week."
+        title="AI Automation for South African Businesses | Digital Gems"
+        description="Custom AI automation for South African businesses. Based in Durban, I build tools that cut admin, speed up replies and give your team back hours every week."
         path="/"
       />
       <Navbar />
