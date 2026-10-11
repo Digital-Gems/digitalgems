@@ -32,7 +32,7 @@ const ContactSection = () => {
         Ready to give your team<br />their time back?
       </h2>
       <p className="text-dg-grey text-[0.82rem] md:text-[1.05rem] max-w-[480px] mx-auto mb-6 md:mb-10 font-light">
-        Email us and we'll map out exactly where AI can save you the most time. No obligation, no jargon.
+        Email me and I'll map out exactly where AI can save you the most time. No obligation, no jargon.
       </p>
       <a
         href={`mailto:${EMAIL}?subject=${encodeURIComponent("Enquiry from digitalgems.co.za")}`}
@@ -47,7 +47,7 @@ const ContactSection = () => {
           boxShadow: "0 0 30px rgba(0,229,200,0.2)",
         }}
       >
-        Email Us
+        Email Me
         <ArrowIcon />
       </a>
       <p className="mt-3 md:mt-4 text-[0.65rem] md:text-[0.78rem] text-dg-grey relative z-[1]">

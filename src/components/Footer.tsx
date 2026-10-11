@@ -14,7 +14,7 @@ const Footer = () => {
             <img src={LOGO_SRC} alt="Digital Gems" className="h-[55px] md:h-[90px]" style={{ mixBlendMode: "screen", filter: "brightness(1.1)" }} />
           </a>
           <p className="text-[0.75rem] md:text-[0.875rem] text-dg-grey mt-2.5 max-w-[240px] leading-[1.65]">
-            We help businesses integrate AI to save time, reduce costs, and let their teams focus on what matters most.
+            I help businesses integrate AI to save time, reduce costs, and let their teams focus on what matters most.
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const Footer = () => {
           <h5 className="font-syne font-head text-[0.7rem] md:text-[0.8rem] font-bold tracking-[0.1em] uppercase text-dg-grey mb-3 md:mb-4">Company</h5>
           <ul className="list-none flex flex-col gap-2">
             {[
-              { name: "About Us", url: "/about" },
+              { name: "About", url: "/about" },
               { name: "Case Studies", url: "/case-study.html", external: true },
             ].map((l) => (
               <li key={l.name}><a href={l.url} {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l.name}</a></li>

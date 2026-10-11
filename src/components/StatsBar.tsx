@@ -27,7 +27,7 @@ const StatsBar = () => {
         </div>
       ))}
       <div className="col-span-2 md:col-span-4 text-center text-[0.65rem] md:text-[0.78rem] text-dg-grey">
-        Results from our AI policy comparison tool for a Westville insurance broker.{" "}
+        Results from the AI policy comparison tool I built for a Westville insurance broker.{" "}
         <a href="/case-study.html" target="_blank" rel="noopener noreferrer" className="text-dg-teal no-underline hover:underline">
           Read the case study
         </a>

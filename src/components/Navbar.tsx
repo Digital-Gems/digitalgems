@@ -25,13 +25,16 @@ const Navbar = () => {
       {/* Desktop nav */}
       <ul className="hidden lg:flex items-center gap-9 list-none">
         <li>
-          <a href="#services" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Solutions</a>
+          <a href="/#services" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Solutions</a>
         </li>
         <li>
-          <a href="#how" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">How It Works</a>
+          <a href="/#how" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">How It Works</a>
         </li>
         <li>
-          <a href="#industries" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Industries</a>
+          <a href="/#industries" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Industries</a>
+        </li>
+        <li>
+          <a href="/#contact" className="text-dg-teal no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Contact</a>
         </li>
       </ul>
 
@@ -56,7 +59,7 @@ const Navbar = () => {
             borderBottom: "1px solid hsl(170 100% 45% / 0.12)",
           }}
         >
-          {["Solutions|#services", "How It Works|#how", "Industries|#industries"].map((item) => {
+          {["Solutions|/#services", "How It Works|/#how", "Industries|/#industries", "Contact|/#contact"].map((item) => {
             const [label, href] = item.split("|");
             return (
               <a

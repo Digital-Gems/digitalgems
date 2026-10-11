@@ -1,9 +1,9 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const steps = [
-  { num: "01", title: "Discovery & Audit", desc: "We map your current workflows, identify your biggest time drains, and pinpoint exactly where AI will have the highest impact. You'll get a clear action plan even if you don't proceed.", duration: "Week 1" },
-  { num: "02", title: "Build & Integrate", desc: "Our team builds your custom AI agents and connects them to your existing tools. We test rigorously, iterate based on your feedback, and make sure everything runs flawlessly.", duration: "Weeks 2–3" },
-  { num: "03", title: "Launch & Optimise", desc: "We go live, train your team, and continue monitoring performance. Monthly check-ins ensure your AI keeps improving as your business evolves.", duration: "Week 4 onwards" },
+  { num: "01", title: "Discovery & Audit", desc: "I map your current workflows, identify your biggest time drains, and pinpoint exactly where AI will have the highest impact. You'll get a clear action plan even if you don't proceed.", duration: "Week 1" },
+  { num: "02", title: "Build & Integrate", desc: "I build your custom automation and connect it to your existing tools. I test thoroughly, iterate based on your feedback and make sure everything works as it should.", duration: "Weeks 2–3" },
+  { num: "03", title: "Launch & Optimise", desc: "I take it live, train your team and keep monitoring performance. Regular check-ins keep your automation improving as your business evolves.", duration: "Week 4 onwards" },
 ];
 
 const HowItWorks = () => {
@@ -12,10 +12,10 @@ const HowItWorks = () => {
     <section ref={ref} id="how" className="bg-dg-bg2 px-4 md:px-10 lg:px-[60px] py-12 md:py-[100px]">
       <div className="text-[0.62rem] md:text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3">The Process</div>
       <h2 className="font-syne font-head font-extrabold mb-3 md:mb-4 text-dg-white" style={{ fontSize: "clamp(1.15rem, 2.8vw, 2.4rem)" }}>
-        From first call to live AI agent{' '}<br className="hidden md:block" />in three simple steps
+        From first chat to live automation{' '}<br className="hidden md:block" />in three simple steps
       </h2>
       <p className="text-dg-grey text-[0.82rem] md:text-[1.05rem] max-w-[560px] leading-[1.7] font-light">
-        We keep it simple, fast, and collaborative — you'll know exactly what's happening at every stage.
+        I keep it simple, fast and collaborative, so you'll know exactly what's happening at every stage.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-3 relative mt-8 md:mt-[70px] gap-6 md:gap-0">

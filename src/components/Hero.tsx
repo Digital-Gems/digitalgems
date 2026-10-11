@@ -55,10 +55,25 @@ const Hero = () => {
           className="text-[0.82rem] md:text-[1.15rem] text-dg-grey max-w-[560px] leading-[1.7] mb-6 md:mb-10 font-light"
           style={{ animation: "fadeUp 0.6s 0.2s ease both" }}
         >
-          Digital Gems integrates intelligent AI agents into your business — automating the repetitive, surfacing the insights, and giving your team back the time to do what matters: building relationships and growing your business.
+          I build AI automation into your business, taking care of the repetitive work, surfacing the insights and giving your team back the time to do what matters: building relationships and growing your business.
         </p>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2.5 sm:gap-4" style={{ animation: "fadeUp 0.6s 0.3s ease both" }}>
+          <a
+            href={`mailto:info@digitalgems.co.za?subject=${encodeURIComponent("Enquiry from digitalgems.co.za")}`}
+            className="inline-flex items-center justify-center gap-2 text-[0.72rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline transition-all"
+            style={{
+              fontFamily: "'Syne', sans-serif",
+              fontWeight: 700,
+              lineHeight: "1.5",
+              background: "hsl(170 100% 45%)",
+              color: "hsl(213 56% 6%)",
+              padding: "11px 22px",
+              boxShadow: "0 0 30px rgba(0,229,200,0.2)",
+            }}
+          >
+            Email Me
+          </a>
           <a
             href="#how"
             className="inline-flex items-center gap-2 font-medium text-[0.72rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline text-dg-white transition-all"
@@ -71,6 +86,13 @@ const Hero = () => {
             See How It Works
           </a>
         </div>
+
+        <p
+          className="mt-5 md:mt-7 text-[0.68rem] md:text-[0.82rem] text-dg-grey"
+          style={{ animation: "fadeUp 0.6s 0.4s ease both" }}
+        >
+          Based in Durban. Serving businesses across South Africa.
+        </p>
       </div>
     </section>
   );
