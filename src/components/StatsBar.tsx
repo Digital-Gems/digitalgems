@@ -1,10 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const stats = [
-  { num: "15+", label: "Hours saved per employee, per week" },
-  { num: "40%", label: "Average reduction in operational costs" },
-  { num: "3×", label: "Faster response time for customer queries" },
-  { num: "14 days", label: "Average time to first live AI agent" },
+  { num: "~3 min", label: "Per comparison, down from 45-60 min" },
+  { num: "20+ hrs", label: "Saved per month at one insurance broker" },
+  { num: "PDF to Excel", label: "One upload, one finished sheet" },
+  { num: "Minutes", label: "Not hours, per client" },
 ];
 
 const StatsBar = () => {
@@ -26,6 +26,12 @@ const StatsBar = () => {
           <div className="text-[0.68rem] md:text-[0.85rem] text-dg-grey">{s.label}</div>
         </div>
       ))}
+      <div className="col-span-2 md:col-span-4 text-center text-[0.65rem] md:text-[0.78rem] text-dg-grey">
+        Results from our AI policy comparison tool for a Westville insurance broker.{" "}
+        <a href="/case-study.html" target="_blank" rel="noopener noreferrer" className="text-dg-teal no-underline hover:underline">
+          Read the case study
+        </a>
+      </div>
     </div>
   );
 };
