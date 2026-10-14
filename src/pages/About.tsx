@@ -130,9 +130,7 @@ const About = () => {
             Email Me
           </a>
           <a
-            href="/case-study.html"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/case-study"
             className="text-[0.8rem] md:text-[0.9rem] text-dg-teal no-underline hover:underline"
           >
             See a real example
