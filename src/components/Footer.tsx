@@ -32,7 +32,7 @@ const Footer = () => {
           <ul className="list-none flex flex-col gap-2">
             {[
               { name: "About", url: "/about" },
-              { name: "Case Studies", url: "/case-study.html", external: true },
+              { name: "Case Studies", url: "/case-study" },
             ].map((l) => (
               <li key={l.name}><a href={l.url} {...(l.external ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="text-[0.75rem] md:text-[0.875rem] no-underline transition-colors hover:text-dg-teal" style={{ color: "rgba(240,244,255,0.6)" }}>{l.name}</a></li>
             ))}
