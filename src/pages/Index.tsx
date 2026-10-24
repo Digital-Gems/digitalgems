@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import StatsBar from "@/components/StatsBar";
 import ProblemSolution from "@/components/ProblemSolution";
 import Services from "@/components/Services";
+import ExampleBuilds from "@/components/ExampleBuilds";
 import HowItWorks from "@/components/HowItWorks";
 import Industries from "@/components/Industries";
 import DataSection from "@/components/DataSection";
@@ -23,6 +24,7 @@ const Index = () => {
       <StatsBar />
       <ProblemSolution />
       <Services />
+      <ExampleBuilds />
       <HowItWorks />
       <Industries />
       <DataSection />
