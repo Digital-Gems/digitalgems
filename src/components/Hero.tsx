@@ -75,7 +75,7 @@ const Hero = () => {
             Email Me
           </a>
           <a
-            href="#how"
+            href="#examples"
             className="inline-flex items-center gap-2 font-medium text-[0.72rem] md:text-[0.88rem] tracking-normal rounded-lg no-underline text-dg-white transition-all"
             style={{
               padding: "11px 20px",
@@ -83,7 +83,7 @@ const Hero = () => {
               background: "transparent",
             }}
           >
-            See How It Works
+            See Example Builds
           </a>
         </div>
 

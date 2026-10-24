@@ -28,6 +28,9 @@ const Navbar = () => {
           <a href="/#services" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Solutions</a>
         </li>
         <li>
+          <a href="/#examples" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">Examples</a>
+        </li>
+        <li>
           <a href="/#how" className="text-dg-grey no-underline text-[0.9rem] font-medium tracking-[0.04em] uppercase transition-colors hover:text-dg-white">How It Works</a>
         </li>
         <li>
@@ -59,7 +62,7 @@ const Navbar = () => {
             borderBottom: "1px solid hsl(170 100% 45% / 0.12)",
           }}
         >
-          {["Solutions|/#services", "How It Works|/#how", "Industries|/#industries", "Contact|/#contact"].map((item) => {
+          {["Solutions|/#services", "Examples|/#examples", "How It Works|/#how", "Industries|/#industries", "Contact|/#contact"].map((item) => {
             const [label, href] = item.split("|");
             return (
               <a

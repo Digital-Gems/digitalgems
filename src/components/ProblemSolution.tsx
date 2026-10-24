@@ -10,7 +10,7 @@ const problems = [
 const solutionPoints = [
   "Works inside your existing tools (CRM, email, Slack, etc.)",
   "Built around your workflows, not generic templates",
-  "Up and running in as little as 2 weeks",
+  "Typically live within 4 weeks",
   "Ongoing support and monitoring available",
   "Your team stays in control while AI handles the grunt work",
 ];

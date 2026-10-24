@@ -1,10 +1,10 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
 
 const industries = [
-  { emoji: "🏢", title: "Professional Services", desc: "Law firms, accountants, consultants: automate client intake, billing, and reporting." },
-  { emoji: "🏥", title: "Healthcare & Wellness", desc: "Patient scheduling, reminder systems, and admin workflows, handled automatically." },
-  { emoji: "💰", title: "Financial Services", desc: "Compliance documentation, client reporting, and data reconciliation, automated and accurate." },
-  { emoji: "🔧", title: "Any Service Business", desc: "If your team handles repetitive tasks manually, I can likely automate a significant portion." },
+  { emoji: "🛡️", title: "Insurance and financial services", desc: "Turn policy PDFs into client-ready comparisons." },
+  { emoji: "🩺", title: "Medical and dental practices", desc: "Let patients book online instead of by phone." },
+  { emoji: "💇", title: "Salons and beauty", desc: "Online booking by service, specialist and time." },
+  { emoji: "🍽️", title: "Restaurants and hospitality", desc: "A simple table-booking page for your guests." },
 ];
 
 const Industries = () => {
@@ -13,11 +13,8 @@ const Industries = () => {
     <section ref={ref} id="industries" className="px-4 md:px-10 lg:px-[60px] py-12 md:py-[100px]">
       <div className="text-[0.62rem] md:text-[0.72rem] font-bold tracking-[0.12em] uppercase text-dg-teal mb-3">Who I Work With</div>
       <h2 className="font-syne font-head font-extrabold mb-3 md:mb-4 text-dg-white" style={{ fontSize: "clamp(1.15rem, 2.8vw, 2.4rem)" }}>
-        Built for businesses that{' '}<br className="hidden md:block" />run on relationships
+        Built for businesses that{' '}<br className="hidden md:block" />run on appointments and paperwork
       </h2>
-      <p className="text-dg-grey text-[0.82rem] md:text-[1.05rem] max-w-[560px] leading-[1.7] font-light">
-        I specialise in service-driven businesses where your team's time is your most valuable asset.
-      </p>
 
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2.5 md:gap-4 mt-8 md:mt-[60px]">
         {industries.map((ind) => (
